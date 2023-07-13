@@ -36,7 +36,7 @@ public class MessageController {
         return null;
      }
 
-    @GetMapping("/DeleteById/{id}")
+    @DeleteMapping("/DeleteById/{id}")
     public void DeleteById(@PathVariable int id) {
         messageRepo.deleteById(id);
     }
